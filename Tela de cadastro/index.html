@@ -13,29 +13,47 @@
     <form>
         <div class="form-row">
           <div class="col-md-4 mb-3">
-            <label for="validationDefault01">nome</label>
+            <label for="validationDefault01">Nome</label>
             <input type="text" class="form-control" id="validationDefault01" placeholder="Nome" required>
           </div>
           <div class="col-md-4 mb-3">
             <label for="validationDefault02">CPF</label>
-            <input type="number" class="form-control" id="validationDefault02" placeholder="Sobrenome"required>
+            <input type="number" class="form-control" id="validationDefault02" placeholder="CPF"required>
           </div>
+          <div class="input-group input-group-sm mb-3">
+            <div class="input-group-prepend1">
+              <span class="input-group-text" id="inputGroup-sizing-sm1">Email</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Exemplo do tamanho do input" aria-describedby="inputGroup-sizing-sm">
+          </div>          
           <div class="col-md-4 mb-3">
-            <label for="validationDefault03">Nascimento</label>
+            <label for="validationDefault04">Nascimento</label>
             <input type="number" class="form-control" id="validationDefault02" placeholder="DD/MM/AAAA" required>
           </div>
+          <div class="input-group input-group-sm mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-sm">telefone</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Exemplo do tamanho do input" aria-describedby="inputGroup-sizing-sm">
+          </div>
+          
         <div class="form-row">
           <div class="col-md-6 mb-3">
-            <label for="validationDefault03">Cidade</label>
+            <label for="validationDefault05">Cidade</label>
             <input type="text" class="form-control" id="validationDefault03" placeholder="Cidade" required>
           </div>
           <div class="col-md-3 mb-3">
-            <label for="validationDefault04">Estado</label>
+            <label for="validationDefault06">Estado</label>
             <input type="text" class="form-control" id="validationDefault04" placeholder="Estado" required>
           </div>
           <div class="col-md-3 mb-3">
-            <label for="validationDefault05">CEP</label>
+            <label for="validationDefault07">CEP</label>
             <input type="text" class="form-control" id="validationDefault05" placeholder="CEP" required>
           </div>
         </div>
+          <p>Sexo : <input type="radio" name="sexo" value="M">  Masculino
+          <input type="radio" name="sexo" value="F">  Feminino</p>
+          <button type="button" class="btn btn-primary btn-sm">Cadastrar</button>
+        </form>
+        </body>
         
