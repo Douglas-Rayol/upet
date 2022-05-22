@@ -5,16 +5,16 @@
         $telefone = $_POST["telefone"];
         $endereco = $_POST["endereco"];
 
-        $sql = "INSERT INTO funcionario (nome, telefone, endereco) VALUES(?, ?, ?)";
+        $sql = "INSERT INTO veterinario (nome, telefone, endereco,) VALUES(?, ?, ?)";
         
         $stmt = mysqli_prepare($link, $sql);
         
-        mysqli_stmt_bind_param($stmt, "sss", $nome, $telefone, $endereco, $senha, $email);
+        mysqli_stmt_bind_param($stmt, "sss", $nome, $telefone, $endereco);
 
         if(mysqli_stmt_execute($stmt)){
-            echo " pronto pra outro";
+            echo " Pronto";
         }else{
-            echo " ta tudo errado";
+            echo " Erro";
         }
     
     }
@@ -25,10 +25,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Funcionario</title>
+    <title>Cadastro de Veterinario</title>
 </head>
 <body>
-    <h2>Cadastro de Funcionario</h2>
+    <h2>Cadastro de Veterinario</h2>
     <form method="post" action="create.php">
         <p>Nome:<input type="text" name="nome"></p>
         <p>Telefone:<input type="text" name="telefone"></p>

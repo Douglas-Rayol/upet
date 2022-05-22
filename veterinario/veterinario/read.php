@@ -3,7 +3,7 @@
 
     if($_GET['id']){
         $id = $_GET['id'];
-        $sql = "SELECT * FROM funcionario WHERE idfuncionario = ?";
+        $sql = "SELECT * FROM veterinario WHERE idveterinario = ?";
         $stmt = mysqli_prepare($link, $sql);
         mysqli_stmt_bind_param($stmt, "i", $id);
         mysqli_stmt_execute($stmt);
@@ -18,10 +18,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalhe do Funcionario</title>
+    <title>Detalhe do Veterinario</title>
 </head>
 <body>
-    <h2>Detalhes do Funcionario</h2>
+    <h2>Detalhes do Veterinario</h2>
     <p>Nome: <?php echo($row['nome']) ?></p>
     <p>Telefone: <?php echo($row['telefone']) ?></p>
     <p>Endereço: <?php echo($row['endereco']) ?></p>
