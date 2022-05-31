@@ -4,46 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upet</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Sistema de Produto</title>
+    <link rel="stylesheet" href="cadas-pro.css">
 </head>
 <body>
-    <div class="container">
-        <div class="form">
-            <form action="">
-                <div class="form-header">
-                    <div class="title">
-                        <h2>Cadastro de Produto</h2>
-                    </div>
-
-                <div class="input-group">
-                    <div class="input-box">
-                        <label>Nome</label>
-                        <input type="text" class="form-control">
-                    </div>
-
-                    <div class="input-box">
-                        <label for="dinheiro">Valor</label>
-                        <input type="text" name="dinheiro" class="form-control" />
-                    </div>
-                    <div class="input-box">
-                        <label>Detalhe</label>
-                        <input type="text" class="form-control">
-                    </div>
-                        <label>validade</label>
-                        <input type="date" class="form-control">
-                    </div>
-
-                    <div class="input-box">
-                        <label>Marca</label>
-                        <input type="text" class="form-control">
-                    </div>
-                </div>
-                <div class="continue-button"><br>
-                    <button class="botao-cadastro">Registrar</button>
-                </div>
-            </form>
-        </div>
+    <div class="form">
+        <form method="post" action="index.php"><br>
+            <h1> Cadastro de Produto</h1><br><br>
+            <input type="text" size="40" placeholder=" Nome do Produto"> &nbsp; &nbsp;
+            <input type="text" placeholder=" R$"><br><br>
+            <input type="text" size="40" placeholder=" Descriçao do Produto"> &nbsp; &nbsp;
+            <input type="date" placeholder=" Validade"><br><br>
+            <label for="uf">Rações:</label>
+            <select name="racoes" id="uf">
+                <option value="0"> Escolha da Ração</option>
+                <optgroup label="Rações">
+                    <option value="1">Super Premium</option>
+                    <option value="2">Premium</option>
+                    <option value="3">Standard ou Comum</option>
+                    <option value="4">Farmina N&D (Natural & Delicious)</option>
+                </optgroup>
+            </select><br><br><br>
+            <input type="submit" value="Registrar"> &nbsp; &nbsp;
+            <input type="submit" value="Atuaizar"> &nbsp; &nbsp;
+            <input type="submit" value="Deletar"><br><br>
+        </form>
     </div>
 </body>
 </html>
