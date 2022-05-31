@@ -1,0 +1,62 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+#produtos{
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#carrinho{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+.produto{
+    width: 32%;
+    margin-right: 1%;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+h2{
+    background-color: rgb(38, 197, 197);
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+}
+.produto img{
+    max-width: 100%;
+}
+.produto p{
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+}
+.produto a{
+    text-decoration: none;
+    color: white;
+    background-color: #ff8c00;
+    text-align: center;
+    display: block;
+    padding: 4px 0;
+    font-size: 18px;
+}
+@media screen and (max-width: 768px){
+    .produto{
+        width: 100%;
+        margin-right: 0;
+    }
+}
+.card{
+    border-bottom: 2px dotted;
+    padding: 10px 0;
+}
+body{
+    background-image:url(Fundo.png);
+}
