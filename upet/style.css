@@ -1,9 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: 0;
-    font-family: sans-serif;
-}
+
 .formulario{
     font:  16px arial, verdana, helvetica, sans-serif;
     border-collapse: collapse;
@@ -44,9 +39,15 @@
     font: 15px arial, verdana, helvetica, sans-serif;
 }
 
+#cachorro{
+    margin-top: 10%;
+}
+
+#gato{
+    margin-top: 50%;
+}
+
 img{
-    width: 500px;
-    height: 700px;
     margin-left: 10%;
     margin-right: 10%;
     align-items: center;
