@@ -1,7 +1,7 @@
 <?php
     require_once "../util/config.php";
 
-    $sql = "SELECT * FROM usuario ORDER BY nome";
+    $sql = "SELECT * FROM veterinario ORDER BY nome";
     $result = mysqli_query($link, $sql);
 
 ?>
@@ -11,33 +11,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exibir Usuario</title>
+    <title>Exibir Veterinario</title>
 </head>
 <body>
-    <h2>Lista de Usuario</h2>
+    <h2>Lista de Veterinario</h2>
     <p><a href="create.php">Incluir</a></p>
     <table border="1">
         <tr>
             <!--<td>Id</td>-->
             <td><center>Nome</center></td>
-            <td><center>CPF</center></td>
             <td><center>Telefone</center></td>
-            <td><center>Nascimento</center></td>
-            <td><center>E-mail</center></td>
             <td><center>Endereço</center></td>
             <td colspan="3"><center>Ações</center></td>
         </tr>
         <?php while($row = mysqli_fetch_array($result)){?>
         <tr>
-            <td><?php echo($row['idusuario'])?></td>
+            <!--<td><?php //echo($row['idcontato'])?></td>-->
             <td><?php echo($row['nome'])?></td>
-            <td><?php echo($row['cpf'])?></td>
             <td><?php echo($row['telefone'])?></td>
-            <td><?php echo($row['email'])?></td>
             <td><?php echo($row['endereco'])?></td>
-            <td><?php echo('<a href="read.php?id='.$row['idusuario'].'">Exibir</a>')?></td>
-            <td><?php echo('<a href="update.php?id='.$row['idusuario'].'">Alterar</a>')?></td>
-            <td><?php echo('<a href="delete.php?id='.$row['idusuario'].'">Excluir</a>')?></td>
+            <td><?php echo('<a href="read.php?id='.$row['idveterinario'].'">Exibir</a>')?></td>
+            <td><?php echo('<a href="update.php?id='.$row['idveterinario'].'">Alterar</a>')?></td>
+            <td><?php echo('<a href="delete.php?id='.$row['idveterinario'].'">Excluir</a>')?></td>
         </tr>
         <?php } ?>
     </table>
